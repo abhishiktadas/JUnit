@@ -1,5 +1,6 @@
 package JUnitTestCase;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
@@ -18,8 +19,8 @@ class Math_Expression1
 	@Test
 	void test() 
 	{
-		int i = me.add(2,3);
-		System.out.println(i);
+		assertEquals(5,me.add(2,3));
+		//System.out.println(i);
 	}
 
 	@Test
